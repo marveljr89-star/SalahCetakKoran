@@ -1,0 +1,275 @@
+[gd_scene format=3 uid="uid://bkol6is3oaiyw"]
+
+[ext_resource type="Script" uid="uid://c6gb1merr2grl" path="res://Scripts/esc_pause_button.gd" id="1_kgtej"]
+[ext_resource type="FontFile" uid="uid://bbm6jcdggx4eq" path="res://Asset/times.ttf" id="1_qtmlx"]
+[ext_resource type="Texture2D" uid="uid://8tvp80pdd580" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Lanjutkan/LanjutkanTombol.png" id="2_icanb"]
+[ext_resource type="Texture2D" uid="uid://cqy1pxr1xhq6m" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Keluar/KeluarTombolState1.png" id="3_kgtej"]
+[ext_resource type="Texture2D" uid="uid://c8sx7pbqqu7wl" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Lanjutkan/LanjutkanTombolState1.png" id="4_glh02"]
+[ext_resource type="Texture2D" uid="uid://crcmkmt5hl35s" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Keluar/KeluarTombolState2.png" id="4_so34w"]
+[ext_resource type="Texture2D" uid="uid://d80jmevwt44h" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Keluar/KeluarTombolState3.png" id="5_ksexn"]
+[ext_resource type="Texture2D" uid="uid://cxn8udso534pm" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Lanjutkan/LanjutkanTombolState2.png" id="5_ver5l"]
+[ext_resource type="Texture2D" uid="uid://dop0c8v4lul0" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Lanjutkan/LanjutkanTombolState3.png" id="6_m47jh"]
+[ext_resource type="Texture2D" uid="uid://cdbbx5gncjn2w" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Keluar/KeluarTombolState4.png" id="6_x6awf"]
+[ext_resource type="Texture2D" uid="uid://5upmeblqgcgc" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Lanjutkan/LanjutkanTombolState4.png" id="7_r2n5t"]
+[ext_resource type="Texture2D" uid="uid://cs0k1jfiotos1" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Pengaturan/TombolPengaturan.png" id="7_uncvj"]
+[ext_resource type="Texture2D" uid="uid://dk7lmbsfsrdil" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Keluar/KeluarTombol.png" id="8_ehhm3"]
+[ext_resource type="Texture2D" uid="uid://b3rfa4g71f5ml" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Pengaturan/TombolPengaturanState1.png" id="9_sombo"]
+[ext_resource type="Texture2D" uid="uid://b77xqcofcci2u" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Pengaturan/TombolPengaturanState2.png" id="10_ofd13"]
+[ext_resource type="Texture2D" uid="uid://cyyqik6udo5uk" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Pengaturan/TombolPengaturanState3.png" id="11_kylep"]
+[ext_resource type="Texture2D" uid="uid://dy1au2dm44tio" path="res://Asset/Animation_Hover_Button/PausedTombolAnim/Pengaturan/TombolPengaturanState4.png" id="12_ge3y0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rux5s"]
+bg_color = Color(0.33288068, 0.3328807, 0.3328806, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mqp4n"]
+bg_color = Color(0.65012825, 0.6501283, 0.6501282, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ckimc"]
+bg_color = Color(0.11119688, 0.11119684, 0.11119678, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_so34w"]
+bg_color = Color(0.36282945, 0.36282954, 0.36282927, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glh02"]
+bg_color = Color(0.67481464, 0.67481464, 0.6748146, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ver5l"]
+bg_color = Color(0.28485042, 0.28485024, 0.28485033, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_g72fw"]
+frames = 6
+speed_scale = 10.0
+frame_0/texture = ExtResource("4_glh02")
+frame_1/texture = ExtResource("5_ver5l")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("6_m47jh")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("7_r2n5t")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("6_m47jh")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("5_ver5l")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_gur0i"]
+frames = 6
+speed_scale = 10.0
+frame_0/texture = ExtResource("9_sombo")
+frame_1/texture = ExtResource("10_ofd13")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("11_kylep")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("12_ge3y0")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("11_kylep")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("10_ofd13")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_mqp4n"]
+frames = 6
+speed_scale = 10.0
+frame_0/texture = ExtResource("3_kgtej")
+frame_1/texture = ExtResource("4_so34w")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("5_ksexn")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("6_x6awf")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("5_ksexn")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("4_so34w")
+frame_5/duration = 1.0
+
+[node name="PauseButton" type="Control" unique_id=1099052575]
+process_mode = 3
+process_priority = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kgtej")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=990258494]
+modulate = Color(0, 0, 0, 0.69803923)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Preview" type="Control" parent="." unique_id=742689126]
+anchors_preset = 0
+offset_right = 1080.0
+offset_bottom = 720.0
+
+[node name="Panel2" type="Panel" parent="Preview" unique_id=1331972420]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -151.5
+offset_right = 180.0
+offset_bottom = 171.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rux5s")
+
+[node name="Panel" type="Panel" parent="Preview" unique_id=524214745]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = -161.5
+offset_right = 170.0
+offset_bottom = 161.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mqp4n")
+
+[node name="Panel3" type="Panel" parent="Preview" unique_id=960836348]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -165.0
+offset_top = -156.5
+offset_right = 165.0
+offset_bottom = 156.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ckimc")
+
+[node name="Panel6" type="Panel" parent="Preview" unique_id=313155977]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.99997
+offset_top = -141.0
+offset_right = 172.0
+offset_bottom = -35.84839
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.94026357, 0.87492716)
+theme_override_styles/panel = SubResource("StyleBoxFlat_so34w")
+
+[node name="Panel4" type="Panel" parent="Preview" unique_id=300273428]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -151.0
+offset_top = -144.0
+offset_right = 169.0
+offset_bottom = -38.84839
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.94026357, 0.87492716)
+theme_override_styles/panel = SubResource("StyleBoxFlat_glh02")
+
+[node name="Panel5" type="Panel" parent="Preview" unique_id=406695297]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.0
+offset_top = -140.598
+offset_right = 165.0
+offset_bottom = -42.598022
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.94026357, 0.87492716)
+theme_override_styles/panel = SubResource("StyleBoxFlat_ver5l")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Preview" unique_id=1663222101]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -131.0
+offset_top = -130.0
+offset_right = 131.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 13
+alignment = 1
+
+[node name="Paused" type="Label" parent="Preview/VBoxContainer" unique_id=874014860]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_qtmlx")
+theme_override_font_sizes/font_size = 63
+text = "DIJEDA!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lanjutkan" type="TextureButton" parent="Preview/VBoxContainer" unique_id=1088727092]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("2_icanb")
+texture_hover = SubResource("AnimatedTexture_g72fw")
+stretch_mode = 3
+
+[node name="Pengaturan" type="TextureButton" parent="Preview/VBoxContainer" unique_id=505406904]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("7_uncvj")
+texture_hover = SubResource("AnimatedTexture_gur0i")
+stretch_mode = 3
+
+[node name="Keluar" type="TextureButton" parent="Preview/VBoxContainer" unique_id=145589989]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("8_ehhm3")
+texture_hover = SubResource("AnimatedTexture_mqp4n")
+stretch_mode = 3
+
+[connection signal="button_down" from="Preview/VBoxContainer/Lanjutkan" to="." method="Lanjutkan_on_lanjutkan_button_down"]
+[connection signal="button_down" from="Preview/VBoxContainer/Pengaturan" to="." method="_on_pengaturan_button_down"]
+[connection signal="button_down" from="Preview/VBoxContainer/Keluar" to="." method="Keluar_on_keluar_button_down"]

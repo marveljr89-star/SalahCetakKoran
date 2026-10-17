@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+.godot/
+Export/
+
+.godot/
+Export/
+Asset/Audio/FirstBGM.mp3

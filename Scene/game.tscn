@@ -1,0 +1,1484 @@
+[gd_scene format=3 uid="uid://4npfoy6wq6d5"]
+
+[ext_resource type="Script" uid="uid://bustwdvy2umnh" path="res://Scripts/DailyKoran.gd" id="1_cvvdq"]
+[ext_resource type="Texture2D" uid="uid://xmn1dey3fnpo" path="res://Asset/Kantor.png" id="1_mhtsl"]
+[ext_resource type="Script" uid="uid://cnudxcaobaesm" path="res://Scripts/kantor.gd" id="2_w51g1"]
+[ext_resource type="Texture2D" uid="uid://wsdaqtalcf80" path="res://Asset/coffee_mug.png" id="3_ihreq"]
+[ext_resource type="Texture2D" uid="uid://biiarl2ojgr2m" path="res://Asset/kerangka telepon.png" id="3_yjs1f"]
+[ext_resource type="Texture2D" uid="uid://b3wtklj2nlawy" path="res://Asset/gulungan koran.png" id="4_0ka5k"]
+[ext_resource type="AudioStream" uid="uid://bdrmlm70ij80f" path="res://Asset/Audio/hover_soft_tick.ogg" id="4_dtnkx"]
+[ext_resource type="Texture2D" uid="uid://dwgop43v42ktw" path="res://Asset/sticky_note.png" id="4_thj8p"]
+[ext_resource type="Texture2D" uid="uid://dblymfcp37oqa" path="res://Asset/wall_clock.png" id="5_h8jt7"]
+[ext_resource type="Texture2D" uid="uid://cte28i0gpnuu4" path="res://Asset/stample_blue.png" id="6_h8jt7"]
+[ext_resource type="Script" uid="uid://sm6w0agin3qi" path="res://Scripts/kerangka_telepon.gd" id="6_ou23v"]
+[ext_resource type="Script" uid="uid://g5oswb8tbu1p" path="res://Scripts/KoranIkat.gd" id="6_yjs1f"]
+[ext_resource type="Script" uid="uid://dxn8fav4veed1" path="res://Scripts/ChangeText_NewspaperBox.gd" id="7_m52p7"]
+[ext_resource type="Texture2D" uid="uid://cng3oig4epbtv" path="res://Asset/stample_X.png" id="7_sagxc"]
+[ext_resource type="Texture2D" uid="uid://dqtf00oi6ky3f" path="res://Asset/KoranAboveMeja.png" id="8_8f6ah"]
+[ext_resource type="Shader" uid="uid://c88q64y0kkpaf" path="res://Shader/game.gdshader" id="9_twwsd"]
+[ext_resource type="Script" uid="uid://wt2kcvvbh7kq" path="res://Scripts/coffee_CariTidakBaku.gd" id="11_pu8ve"]
+[ext_resource type="Script" uid="uid://cnk83x22isi7d" path="res://Scripts/koran_atas_meja.gd" id="13_ha7wd"]
+[ext_resource type="Texture2D" uid="uid://dtbydegindiil" path="res://Asset/newspaper box.png" id="13_yjs1f"]
+[ext_resource type="AudioStream" uid="uid://b70n6qgcqnhaf" path="res://Asset/Audio/Koran_ikat_dibuka.mp3" id="14_ctdoe"]
+[ext_resource type="Script" uid="uid://c3epd8xbkdm5l" path="res://Scripts/stample_blue.gd" id="14_vme86"]
+[ext_resource type="Script" uid="uid://8yb65haue8s8" path="res://Scripts/stample_red.gd" id="16_0hblu"]
+[ext_resource type="Texture2D" uid="uid://ct57ws4ix32oo" path="res://Asset/sticky note.png" id="17_vy0et"]
+[ext_resource type="FontFile" uid="uid://b3hfttiw10cuj" path="res://Asset/Karma Future.otf" id="18_sqb0o"]
+[ext_resource type="Script" uid="uid://cq5arb755khf6" path="res://Scripts/tunjukan_hasil.gd" id="20_myi3l"]
+[ext_resource type="Script" uid="uid://bgm3f6j1vf4a2" path="res://Scripts/DayIndicator.gd" id="20_xtomw"]
+[ext_resource type="AudioStream" uid="uid://cstl1gbrhmegi" path="res://Asset/Audio/Stampel.ogg" id="21_ctdoe"]
+[ext_resource type="Script" uid="uid://cqrouhru1xmqn" path="res://Scripts/cekHasil.gd" id="21_t4l4u"]
+[ext_resource type="Texture2D" uid="uid://civn6g8iaqqjb" path="res://Asset/Animation_Hover_Button/Kanan_Animation/BeforeHover_State.png" id="22_4goun"]
+[ext_resource type="Texture2D" uid="uid://bfywhynk26787" path="res://Asset/Animation_Hover_Button/Kiri_Animation/BeforeHover_State.png" id="22_8dbio"]
+[ext_resource type="Texture2D" uid="uid://3f88vy85x4or" path="res://Asset/Animation_Hover_Button/Kembali_Animation/BeforeHover_state.png" id="22_frawd"]
+[ext_resource type="Texture2D" uid="uid://bca8yggapwi7m" path="res://Asset/Animation_Hover_Button/Kanan_Animation/NormalState.png" id="23_msfot"]
+[ext_resource type="Texture2D" uid="uid://d20c7ea5mftta" path="res://Asset/Animation_Hover_Button/Kembali_Animation/NormalState.png" id="23_nbbww"]
+[ext_resource type="Texture2D" uid="uid://dovytxk7ultdc" path="res://Asset/Animation_Hover_Button/Kiri_Animation/NormalState.png" id="23_nq3js"]
+[ext_resource type="Texture2D" uid="uid://bguiiok0jloyg" path="res://Asset/Animation_Hover_Button/Kiri_Animation/SecondState.png" id="24_drtjh"]
+[ext_resource type="Texture2D" uid="uid://cmjad61s1cvmf" path="res://Asset/Animation_Hover_Button/Kembali_Animation/SecondState.png" id="24_i4648"]
+[ext_resource type="AudioStream" uid="uid://dkny7kieni6rk" path="res://Asset/Audio/koran_slide.mp3" id="24_vdpaq"]
+[ext_resource type="Texture2D" uid="uid://b4mkfielkoc74" path="res://Asset/UI_Koran_Kosong.png" id="24_x6l2d"]
+[ext_resource type="Texture2D" uid="uid://cr3d03mjbab2" path="res://Asset/Animation_Hover_Button/Kanan_Animation/SecondState.png" id="24_yb6pi"]
+[ext_resource type="Texture2D" uid="uid://dtmnuugaoyokw" path="res://Asset/Animation_Hover_Button/Kembali_Animation/ThirdState.png" id="25_1dj8w"]
+[ext_resource type="Texture2D" uid="uid://tthyyyr21ntn" path="res://Asset/Animation_Hover_Button/Kiri_Animation/ThirdState.png" id="25_70hps"]
+[ext_resource type="FontFile" uid="uid://bbm6jcdggx4eq" path="res://Asset/times.ttf" id="25_ckojl"]
+[ext_resource type="AudioStream" uid="uid://lplm87mphwdo" path="res://Asset/Audio/newspaper_into_box.ogg" id="25_iyx37"]
+[ext_resource type="Texture2D" uid="uid://dvdgfv2sdxmsl" path="res://Asset/Animation_Hover_Button/Kanan_Animation/ThirdState.png" id="25_sfyv8"]
+[ext_resource type="Texture2D" uid="uid://da3fxqp0ko012" path="res://Asset/Animation_Hover_Button/Kanan_Animation/FourthState.png" id="26_8q2nm"]
+[ext_resource type="Script" uid="uid://co4vwyo4wmi4a" path="res://Scripts/results.gd" id="26_t4l4u"]
+[ext_resource type="Texture2D" uid="uid://yq5oycrvsiy" path="res://Asset/Animation_Hover_Button/Kiri_Animation/FourthState.png" id="26_uwgqe"]
+[ext_resource type="Texture2D" uid="uid://0vdr4x8pae7x" path="res://Asset/Animation_Hover_Button/Kanan_Animation/MaxState.png" id="27_8dbio"]
+[ext_resource type="Texture2D" uid="uid://d4qv1uwg4pv8" path="res://Asset/Star.png" id="27_kiq81"]
+[ext_resource type="Texture2D" uid="uid://v5hmhei00cjh" path="res://Asset/Animation_Hover_Button/Kiri_Animation/MaxState.png" id="27_vme86"]
+[ext_resource type="Texture2D" uid="uid://cgqsomt8iq8cg" path="res://Asset/EmptyStar.png" id="28_x6l2d"]
+[ext_resource type="Texture2D" uid="uid://dvjb2k1kr3mo4" path="res://Asset/arrow.png" id="38_70hps"]
+[ext_resource type="FontFile" uid="uid://bhrmy63g7y560" path="res://Asset/Filepile.otf" id="40_nq3js"]
+[ext_resource type="Script" uid="uid://bpj7c0s3p1dvw" path="res://Scripts/CekHasil_Slide.gd" id="41_drtjh"]
+[ext_resource type="Script" uid="uid://sqpvfpanxrfs" path="res://Scripts/Stampel_KoranUI.gd" id="41_wbjxj"]
+[ext_resource type="Texture2D" uid="uid://bcwlrmhndmqst" path="res://Asset/scroll.png" id="43_uwgqe"]
+[ext_resource type="Texture2D" uid="uid://ccqcaqpcl6ch" path="res://Asset/stamp_salah (red) (1).png" id="44_xtomw"]
+[ext_resource type="Texture2D" uid="uid://cv4g12s57mqni" path="res://Asset/stamp_bener (blue) (1).png" id="45_cf1g3"]
+[ext_resource type="Script" uid="uid://c73e6p5c85qyc" path="res://Scripts/vbox_SaveStartTextData.gd" id="50_cf1g3"]
+[ext_resource type="Texture2D" uid="uid://couej86ifyoow" path="res://Asset/Animation_Hover_Button/CekHasilAnim/TombolCekHasil.png" id="51_u1gua"]
+[ext_resource type="Texture2D" uid="uid://b5c3ipfbqd8hb" path="res://Asset/Animation_Hover_Button/CekHasilAnim/TombolCekHasilHover.png" id="52_2cu3p"]
+[ext_resource type="Texture2D" uid="uid://d10e8e4td3t3q" path="res://Asset/Animation_Hover_Button/HariSelanjutnyaAnim/HariSelanjutnya.png" id="53_sqqtj"]
+[ext_resource type="Texture2D" uid="uid://dhkjimetc3jk5" path="res://Asset/Animation_Hover_Button/HariSelanjutnyaAnim/HasiSelanjutnyaHover.png" id="54_pu8ve"]
+[ext_resource type="FontFile" uid="uid://c6a8k61n7dhbf" path="res://Asset/Digital808.ttf" id="57_sqqtj"]
+[ext_resource type="Script" uid="uid://c5kty1dntdotw" path="res://Scripts/waktu.gd" id="58_pu8ve"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yjs1f"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.1499999966472
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ohty0"]
+size = Vector2(57.905304, 46.47669)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cvvdq"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.1499999966472
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vyw1f"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.1499999966472
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mqp4n"]
+size = Vector2(66.497, 20.242422)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0ka5k"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.1999999955296
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c6b8m"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.1499999966472
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_twwsd"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 4
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.1499999966472
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_opxjy"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 4
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.999999977648
+shader_parameter/darkness = 0.1999999955296
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_okv1k"]
+size = Vector2(442.94928, 281.08038)
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_4goun"]
+frames = 8
+speed_scale = 10.0
+frame_0/texture = ExtResource("23_nq3js")
+frame_1/texture = ExtResource("24_drtjh")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("25_70hps")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("26_uwgqe")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("27_vme86")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("26_uwgqe")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("25_70hps")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("24_drtjh")
+frame_7/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_i4648"]
+frames = 8
+speed_scale = 10.0
+frame_0/texture = ExtResource("23_msfot")
+frame_1/texture = ExtResource("24_yb6pi")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("25_sfyv8")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("26_8q2nm")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("27_8dbio")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("26_8q2nm")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("25_sfyv8")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("24_yb6pi")
+frame_7/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_nbbww"]
+frames = 4
+speed_scale = 10.0
+frame_0/texture = ExtResource("23_nbbww")
+frame_0/duration = 4.0
+frame_1/texture = ExtResource("24_i4648")
+frame_1/duration = 2.0
+frame_2/texture = ExtResource("25_1dj8w")
+frame_2/duration = 4.0
+frame_3/texture = ExtResource("24_i4648")
+frame_3/duration = 2.0
+
+[sub_resource type="Gradient" id="Gradient_k71aw"]
+colors = PackedColorArray(0.97029227, 0.9272364, 0.8599614, 1, 0.64493674, 0.51423275, 0.29806525, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_nbbww"]
+gradient = SubResource("Gradient_k71aw")
+fill_from = Vector2(0.9551282, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0hblu"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_02s7c"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xm4o6"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wbjxj"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xtomw"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cf1g3"]
+shader = ExtResource("9_twwsd")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="Gradient" id="Gradient_70hps"]
+colors = PackedColorArray(0.97029227, 0.9272364, 0.8599614, 1, 0.64493674, 0.51423275, 0.29806525, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_sfyv8"]
+gradient = SubResource("Gradient_70hps")
+fill_from = Vector2(0.9636752, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckojl"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frawd"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbbww"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4648"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dj8w"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etf37"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4goun"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msfot"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb6pi"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfyv8"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8q2nm"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dbio"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nq3js"]
+atlas = ExtResource("27_kiq81")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xrivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckojl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frawd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbbww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4648")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dj8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etf37")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4goun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msfot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yb6pi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sfyv8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8q2nm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dbio")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nq3js")
+}],
+"loop": 1,
+"name": &"Star",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_x6l2d")
+}],
+"loop": 1,
+"name": &"noStar",
+"speed": 0.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_uwgqe"]
+offsets = PackedFloat32Array(0, 0.63081396)
+colors = PackedColorArray(0.96862745, 0.9254902, 0.85882354, 1, 0.7143905, 0.5782574, 0.34986493, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vme86"]
+gradient = SubResource("Gradient_uwgqe")
+fill_from = Vector2(0.9722222, 0)
+
+[node name="Game" type="Node2D" unique_id=819268376]
+script = ExtResource("1_cvvdq")
+
+[node name="Kantor" type="Sprite2D" parent="." unique_id=113030874]
+self_modulate = Color(0.8949222, 0.89492244, 0.8949223, 1)
+z_index = -6
+texture_filter = 1
+position = Vector2(558, 373)
+scale = Vector2(1.7436603, 1.7417233)
+texture = ExtResource("1_mhtsl")
+script = ExtResource("2_w51g1")
+
+[node name="HoverAudio" type="AudioStreamPlayer2D" parent="Kantor" unique_id=1677952263]
+scale = Vector2(1.0000001, 1.0000001)
+stream = ExtResource("4_dtnkx")
+bus = &"SFX"
+
+[node name="KerangkaTelepon" type="Sprite2D" parent="Kantor" unique_id=1651025520]
+material = SubResource("ShaderMaterial_yjs1f")
+position = Vector2(-233.99055, 28.791021)
+scale = Vector2(1.9875329, 2.1865485)
+texture = ExtResource("3_yjs1f")
+script = ExtResource("6_ou23v")
+metadata/Outline = 1.0
+
+[node name="Area2D" type="Area2D" parent="Kantor/KerangkaTelepon" unique_id=1533318273]
+position = Vector2(0.5771036, -2.3632202)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kantor/KerangkaTelepon/Area2D" unique_id=544095963]
+position = Vector2(3.6068954, 3.2822495)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_ohty0")
+
+[node name="NewspaperBox" type="Sprite2D" parent="Kantor" unique_id=461841587]
+texture_filter = 1
+material = SubResource("ShaderMaterial_cvvdq")
+position = Vector2(225.38792, 31.087597)
+scale = Vector2(2.612141, 2.5937407)
+texture = ExtResource("13_yjs1f")
+script = ExtResource("7_m52p7")
+metadata/Outline = 1.0
+metadata/DailyKoran = 0
+metadata/CurrentKoran = 0
+
+[node name="Label" type="Label" parent="Kantor/NewspaperBox" unique_id=779866548]
+texture_filter = 1
+offset_left = 0.43910873
+offset_top = 11.067877
+offset_right = 47.43911
+offset_bottom = 74.06788
+scale = Vector2(0.22307298, 0.18860686)
+theme_override_font_sizes/font_size = 45
+text = "-/-"
+horizontal_alignment = 1
+justification_flags = 171
+
+[node name="Area2D" type="Area2D" parent="Kantor/NewspaperBox" unique_id=328986700 groups=["NewspaperBox"]]
+position = Vector2(0.5771036, -2.3632202)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Kantor/NewspaperBox/Area2D" unique_id=1738935283]
+position = Vector2(0.23540932, 1.079962)
+scale = Vector2(1.0274625, 1.0945596)
+polygon = PackedVector2Array(-29.558243, -15.566742, 14.35257, -15.566742, 28.184479, -1.3998566, 28.404022, 27.155266, -16.604553, 27.155266, -29.558243, 14.316528)
+
+[node name="KoranIkat" type="Sprite2D" parent="Kantor" unique_id=1333125923]
+visible = false
+texture_filter = 1
+material = SubResource("ShaderMaterial_vyw1f")
+position = Vector2(-4.0145817, -13.1214905)
+scale = Vector2(2.466619, 2.4959798)
+texture = ExtResource("4_0ka5k")
+metadata/Outline = 0.5
+metadata/Start = true
+
+[node name="Area2D" type="Area2D" parent="Kantor/KoranIkat" unique_id=642591685]
+position = Vector2(-10.925615, -76.07215)
+script = ExtResource("6_yjs1f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kantor/KoranIkat/Area2D" unique_id=334495468]
+position = Vector2(12.088158, 95.36086)
+scale = Vector2(1.0000001, 0.9999999)
+shape = SubResource("RectangleShape2D_mqp4n")
+
+[node name="BukaKoran" type="AudioStreamPlayer2D" parent="Kantor/KoranIkat" unique_id=1943167811]
+stream = ExtResource("14_ctdoe")
+bus = &"SFX"
+
+[node name="Coffee" type="Sprite2D" parent="Kantor" unique_id=934223362]
+modulate = Color(0.98234254, 0.9823423, 0.9823424, 1)
+self_modulate = Color(0.8175213, 0.8175213, 0.81752115, 1)
+texture_filter = 1
+material = SubResource("ShaderMaterial_0ka5k")
+position = Vector2(-214.49133, 112.61604)
+scale = Vector2(1.7048193, 1.5422705)
+texture = ExtResource("3_ihreq")
+flip_h = true
+script = ExtResource("11_pu8ve")
+metadata/Outline = 1.5
+
+[node name="Area2D" type="Area2D" parent="Kantor/Coffee" unique_id=924667756]
+position = Vector2(-10.925615, -76.07215)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Kantor/Coffee/Area2D" unique_id=2129077667]
+position = Vector2(-0.27764964, -8.933954)
+scale = Vector2(1.0459183, 1.1467068)
+polygon = PackedVector2Array(34.44258, 57.813484, 35.115387, 95.785225, 24.686893, 100.99703, 9.21236, 100.99703, -1.2161293, 95.785225, -2.225338, 89.82888, -8.953398, 89.82888, -14.335844, 84.24479, -13.999441, 67.49256, -8.953398, 63.02529, -3.2345467, 62.653023, -0.8797264, 58.185753, 9.548763, 51.112587, 23.677685, 51.112587)
+
+[node name="StickyNote" type="Sprite2D" parent="Kantor" unique_id=155697975]
+modulate = Color(0.7121294, 0.7121294, 0.71212935, 1)
+texture_filter = 1
+position = Vector2(-222.89157, -119.48956)
+scale = Vector2(3.0104795, 2.9047635)
+texture = ExtResource("4_thj8p")
+
+[node name="WallClock" type="Sprite2D" parent="Kantor" unique_id=1130314538]
+modulate = Color(0.7750634, 0.7750634, 0.7750634, 1)
+texture_filter = 1
+position = Vector2(212.65062, -159.51276)
+scale = Vector2(1.8731176, 1.7582657)
+texture = ExtResource("5_h8jt7")
+
+[node name="StampleBlue" type="Sprite2D" parent="Kantor" unique_id=1230347396]
+modulate = Color(0.83033526, 0.83033514, 0.83033514, 1)
+texture_filter = 1
+material = SubResource("ShaderMaterial_c6b8m")
+position = Vector2(133.78651, 112.393166)
+scale = Vector2(1.152, 1.126)
+texture = ExtResource("6_h8jt7")
+script = ExtResource("14_vme86")
+metadata/Outline = 1.5
+metadata/AnimatedDone = true
+metadata/AnimFloatHold = false
+
+[node name="Area2D" type="Area2D" parent="Kantor/StampleBlue" unique_id=1615298794]
+position = Vector2(0.87297404, 0.7085619)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Kantor/StampleBlue/Area2D" unique_id=851168264]
+position = Vector2(0.08879197, -0.24596095)
+scale = Vector2(1.084965, 1.11)
+polygon = PackedVector2Array(12.751343, 8.010162, 19.175232, 12.279053, 20.69513, 17.772278, 1.7389832, 19.447296, -5.1922913, 31.029602, -32.359283, 31.10373, -31.86145, 10.197937, -26.883087, 2.5494843, -21.406921, 0, -5.9740295, 0, -6.5203247, -3.8479156, -14.32077, -6.6938477, -13.441559, -26.00473, -5.4761963, -32.633392, 2.4891968, -32.633392, 11.450226, -26.00473, 12.751343, -6.219528, 4.492035, -4.322235, 4.266571, -0.07411194, 12.729767, 0.43579102)
+
+[node name="Stamp" type="AudioStreamPlayer2D" parent="Kantor/StampleBlue" unique_id=1497716546]
+stream = ExtResource("21_ctdoe")
+
+[node name="StampleRed" type="Sprite2D" parent="Kantor" unique_id=345826844]
+modulate = Color(0.83033526, 0.83033514, 0.83033514, 1)
+texture_filter = 1
+material = SubResource("ShaderMaterial_twwsd")
+position = Vector2(164.18236, 132.48822)
+scale = Vector2(1.152, 1.126)
+texture = ExtResource("7_sagxc")
+script = ExtResource("16_0hblu")
+metadata/Outline = 1.5
+metadata/AnimatedDone = true
+metadata/AnimFloatHold = false
+
+[node name="Area2D" type="Area2D" parent="Kantor/StampleRed" unique_id=1798629158]
+position = Vector2(0.87297404, 0.7085619)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Kantor/StampleRed/Area2D" unique_id=1229334332]
+position = Vector2(0.03550458, 0.27156115)
+scale = Vector2(1.0515872, 1.1199999)
+polygon = PackedVector2Array(3.9826965, 0, 19.913422, 0.50990295, 27.38095, 4.589081, 29.870117, 10.707855, 30.36795, 31.10373, -32.359283, 31.10373, -31.86145, 10.197937, -26.883087, 2.5494843, -21.406921, 0, -5.9740295, 0, -7.1500244, -4.75943, -12.830963, -6.169281, -13.441559, -26.00473, -5.4761963, -32.633392, 2.4891968, -32.633392, 11.450226, -26.00473, 13.680176, -6.639221, 5.158722, -3.819519)
+
+[node name="Stamp" type="AudioStreamPlayer2D" parent="Kantor/StampleRed" unique_id=38876279]
+position = Vector2(-26.385254, -17.846375)
+scale = Vector2(0.99999994, 0.99999994)
+stream = ExtResource("21_ctdoe")
+
+[node name="KoranAtasMeja" type="Sprite2D" parent="Kantor" unique_id=538703561]
+visible = false
+modulate = Color(0.9428232, 0.9428226, 0.94282264, 1)
+self_modulate = Color(0.930598, 0.9059274, 0.9059365, 1)
+texture_filter = 1
+material = SubResource("ShaderMaterial_opxjy")
+position = Vector2(-3.4410563, 117.20919)
+scale = Vector2(0.159901, 0.18587957)
+texture = ExtResource("8_8f6ah")
+script = ExtResource("13_ha7wd")
+metadata/Outline = 20.0
+metadata/AnimatedDone = true
+metadata/Start = true
+metadata/KoranOpen = false
+
+[node name="Area2D" type="Area2D" parent="Kantor/KoranAtasMeja" unique_id=823252825 groups=["KoranAtasMeja"]]
+position = Vector2(-10.925615, -76.07215)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Kantor/KoranAtasMeja/Area2D" unique_id=1004104332]
+position = Vector2(-0.32356024, 19.107334)
+scale = Vector2(1.0545775, 1.0733213)
+polygon = PackedVector2Array(645.5941, 512.7401, -627.66064, 512.7401, -408.87598, -361.38904, 426.80945, -361.38904)
+
+[node name="Area2DMasukinKoran" type="Area2D" parent="Kantor/KoranAtasMeja" unique_id=1874357168]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kantor/KoranAtasMeja/Area2DMasukinKoran" unique_id=1449320657]
+position = Vector2(-25.106434, -43.243206)
+shape = SubResource("RectangleShape2D_okv1k")
+
+[node name="AudioBukaKoran" type="AudioStreamPlayer2D" parent="Kantor/KoranAtasMeja" unique_id=2010315349]
+stream = ExtResource("24_vdpaq")
+bus = &"SFX"
+
+[node name="KoranMasukBox" type="AudioStreamPlayer2D" parent="Kantor/KoranAtasMeja" unique_id=1646119988]
+stream = ExtResource("25_iyx37")
+bus = &"SFX"
+
+[node name="DayIndicator" type="Sprite2D" parent="Kantor" unique_id=1150676680]
+texture_filter = 1
+position = Vector2(210.47676, -64.79445)
+scale = Vector2(1.8131162, 1.2738814)
+texture = ExtResource("17_vy0et")
+script = ExtResource("20_xtomw")
+metadata/DAY = 1
+
+[node name="Label" type="Label" parent="Kantor/DayIndicator" unique_id=2095792199]
+texture_filter = 1
+offset_left = -17.713333
+offset_top = -11.718317
+offset_right = 127.28667
+offset_bottom = 60.281685
+scale = Vector2(0.17036213, 0.2622807)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_sqb0o")
+theme_override_font_sizes/font_size = 74
+text = "HARI -"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TunjukanHasil" type="Node2D" parent="." unique_id=1133854527]
+visible = false
+script = ExtResource("20_myi3l")
+metadata/KoranBenar = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="TunjukanHasil" unique_id=265442498]
+offset_right = 1080.0
+offset_bottom = 720.0
+texture = ExtResource("1_mhtsl")
+region_rect = Rect2(0, 296.5, 698, 151.5)
+
+[node name="CekHasil" type="Node2D" parent="TunjukanHasil" unique_id=571006193]
+visible = false
+position = Vector2(0, -700)
+script = ExtResource("21_t4l4u")
+metadata/AnimatedDone = true
+
+[node name="HoverAudio" type="AudioStreamPlayer2D" parent="TunjukanHasil/CekHasil" unique_id=1006189141]
+stream = ExtResource("4_dtnkx")
+bus = &"SFX"
+
+[node name="AudioSlide" type="AudioStreamPlayer2D" parent="TunjukanHasil/CekHasil" unique_id=1244505678]
+stream = ExtResource("24_vdpaq")
+bus = &"SFX"
+
+[node name="KiriTombol" type="TextureButton" parent="TunjukanHasil/CekHasil" unique_id=1012485667]
+offset_left = 105.0
+offset_top = 463.0
+offset_right = 605.00024
+offset_bottom = 963.0
+scale = Vector2(0.379, 0.375)
+texture_normal = ExtResource("22_8dbio")
+texture_hover = SubResource("AnimatedTexture_4goun")
+metadata/AnimatedDone = true
+
+[node name="KananTombol" type="TextureButton" parent="TunjukanHasil/CekHasil" unique_id=834460193]
+offset_left = 784.99994
+offset_top = 463.00003
+offset_right = 1285.0
+offset_bottom = 963.0
+scale = Vector2(0.3794855, 0.37529206)
+texture_normal = ExtResource("22_4goun")
+texture_hover = SubResource("AnimatedTexture_i4648")
+metadata/AnimatedDone = true
+
+[node name="KembaliTombol" type="TextureButton" parent="TunjukanHasil/CekHasil" unique_id=1863704626]
+offset_left = 430.99997
+offset_top = 431.99997
+offset_right = 931.00037
+offset_bottom = 932.0
+scale = Vector2(0.4769074, 0.5108127)
+texture_normal = ExtResource("22_frawd")
+texture_hover = SubResource("AnimatedTexture_nbbww")
+
+[node name="Tempat" type="Node2D" parent="TunjukanHasil/CekHasil" unique_id=1768150420]
+
+[node name="Sheet" type="Node2D" parent="TunjukanHasil/CekHasil/Tempat" unique_id=1604277628]
+position = Vector2(540, 250)
+scale = Vector2(1.2, 1.2)
+
+[node name="KertasJawab" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/Sheet" unique_id=1416083280]
+texture_filter = 1
+scale = Vector2(3.9531252, 5.109375)
+texture = SubResource("GradientTexture2D_nbbww")
+
+[node name="GridContainer" type="GridContainer" parent="TunjukanHasil/CekHasil/Tempat/Sheet" unique_id=809813510]
+z_as_relative = false
+texture_filter = 1
+offset_left = -124.856995
+offset_top = -90.0
+offset_right = 125.143005
+offset_bottom = 160.0
+
+[node name="TextSlot1" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer" unique_id=2004308591]
+texture_filter = 1
+material = SubResource("ShaderMaterial_0hblu")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 0
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot1" unique_id=1958558325]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot1" unique_id=410440836]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot1" unique_id=1710125787]
+visible = false
+position = Vector2(110.69032, 14.166661)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot2" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer" unique_id=1017902577]
+texture_filter = 1
+material = SubResource("ShaderMaterial_02s7c")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 1
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot2" unique_id=841038734]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot2" unique_id=612065775]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot2" unique_id=14697434]
+visible = false
+position = Vector2(110.69031, 15.166672)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot3" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer" unique_id=951125100]
+texture_filter = 1
+material = SubResource("ShaderMaterial_xm4o6")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 2
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot3" unique_id=1064868960]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot3" unique_id=1954862472]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot3" unique_id=413431757]
+visible = false
+position = Vector2(110.37377, 14.556128)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot4" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer" unique_id=1070317607]
+texture_filter = 1
+material = SubResource("ShaderMaterial_wbjxj")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 3
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot4" unique_id=1889321604]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot4" unique_id=1661263412]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot4" unique_id=1460811956]
+visible = false
+position = Vector2(110.37377, 15.556142)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot5" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer" unique_id=1050888127]
+texture_filter = 1
+material = SubResource("ShaderMaterial_xtomw")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 4
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot5" unique_id=1992716505]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot5" unique_id=265557837]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot5" unique_id=27357865]
+visible = false
+position = Vector2(110.69034, 14.833312)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot6" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer" unique_id=1930850830]
+texture_filter = 1
+material = SubResource("ShaderMaterial_cf1g3")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 5
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot6" unique_id=141036451]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot6" unique_id=1700792844]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/Sheet/GridContainer/TextSlot6" unique_id=881446973]
+visible = false
+position = Vector2(110.69034, 14.166674)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="SheetJawab" type="Node2D" parent="TunjukanHasil/CekHasil/Tempat" unique_id=1183592866]
+position = Vector2(880, 250)
+scale = Vector2(1.2, 1.2)
+
+[node name="KertasJawab" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab" unique_id=1411806970]
+texture_filter = 1
+scale = Vector2(3.9531252, 5.109375)
+texture = SubResource("GradientTexture2D_sfyv8")
+
+[node name="GridContainer" type="GridContainer" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab" unique_id=412269797]
+z_as_relative = false
+texture_filter = 1
+offset_left = -124.856995
+offset_top = -90.0
+offset_right = 125.143005
+offset_bottom = 160.0
+
+[node name="TextSlot1" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer" unique_id=1687964366]
+texture_filter = 1
+material = SubResource("ShaderMaterial_0hblu")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 0
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot1" unique_id=1238739724]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot1" unique_id=3228465]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot1" unique_id=609166355]
+visible = false
+position = Vector2(110.69032, 14.166661)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot2" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer" unique_id=423825741]
+texture_filter = 1
+material = SubResource("ShaderMaterial_02s7c")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 1
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot2" unique_id=602255578]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot2" unique_id=236586774]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot2" unique_id=539608659]
+visible = false
+position = Vector2(110.69031, 15.166672)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot3" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer" unique_id=1280099325]
+texture_filter = 1
+material = SubResource("ShaderMaterial_xm4o6")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 2
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot3" unique_id=1609393968]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot3" unique_id=1012002745]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot3" unique_id=1208338024]
+visible = false
+position = Vector2(110.37377, 14.556128)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot4" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer" unique_id=53233777]
+texture_filter = 1
+material = SubResource("ShaderMaterial_wbjxj")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 3
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot4" unique_id=602017563]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot4" unique_id=708405275]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot4" unique_id=1078483721]
+visible = false
+position = Vector2(110.37377, 15.556142)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot5" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer" unique_id=952884081]
+texture_filter = 1
+material = SubResource("ShaderMaterial_xtomw")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 4
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot5" unique_id=725765388]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot5" unique_id=1577903537]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot5" unique_id=619577772]
+visible = false
+position = Vector2(110.69034, 14.833312)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="TextSlot6" type="Panel" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer" unique_id=1134120339]
+texture_filter = 1
+material = SubResource("ShaderMaterial_cf1g3")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 5
+
+[node name="Label" type="Label" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot6" unique_id=903321199]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot6" unique_id=1114638264]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/SheetJawab/GridContainer/TextSlot6" unique_id=1340221548]
+visible = false
+position = Vector2(110.69034, 14.166674)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("38_70hps")
+
+[node name="KoranUI" type="Node2D" parent="TunjukanHasil/CekHasil/Tempat" unique_id=1141846279]
+position = Vector2(200, 250)
+scale = Vector2(1.2, 1.2)
+script = ExtResource("41_wbjxj")
+metadata/StampelBenar = false
+metadata/StampelSalah = false
+
+[node name="Koran" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/KoranUI" unique_id=2050062380]
+texture_filter = 1
+scale = Vector2(3.3375, 3.5572915)
+texture = ExtResource("24_x6l2d")
+
+[node name="Judul" type="Label" parent="TunjukanHasil/CekHasil/Tempat/KoranUI" unique_id=1161398571]
+texture_filter = 1
+offset_left = -114.0
+offset_top = -81.0
+offset_right = 113.0
+offset_bottom = -58.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 171
+
+[node name="Paragraph" type="RichTextLabel" parent="TunjukanHasil/CekHasil/Tempat/KoranUI" unique_id=1743220422]
+texture_filter = 1
+offset_left = -113.0
+offset_top = -57.0
+offset_right = 114.0
+offset_bottom = 121.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("25_ckojl")
+theme_override_font_sizes/normal_font_size = 15
+justification_flags = 171
+meta_underlined = false
+
+[node name="StampSalah" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/KoranUI" unique_id=1591812906]
+visible = false
+texture_filter = 1
+position = Vector2(0, 28)
+rotation = -0.29768986
+scale = Vector2(4.867866, 5.1633725)
+texture = ExtResource("44_xtomw")
+
+[node name="StampBenar" type="Sprite2D" parent="TunjukanHasil/CekHasil/Tempat/KoranUI" unique_id=1097917593]
+visible = false
+texture_filter = 1
+position = Vector2(0, 28)
+rotation = -0.29768986
+scale = Vector2(4.867866, 5.1633725)
+texture = ExtResource("45_cf1g3")
+
+[node name="Slide" type="Label" parent="TunjukanHasil/CekHasil" unique_id=1687294102]
+offset_left = 440.0
+offset_top = 635.0
+offset_right = 661.0
+offset_bottom = 705.0
+theme_override_fonts/font = ExtResource("40_nq3js")
+theme_override_font_sizes/font_size = 23
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("41_drtjh")
+
+[node name="Results" type="NinePatchRect" parent="TunjukanHasil" unique_id=1690471397]
+texture_filter = 1
+offset_left = -81.0
+offset_right = 711.0
+offset_bottom = 720.0
+texture = ExtResource("43_uwgqe")
+region_rect = Rect2(0, 0, 80.16507, 96.621994)
+script = ExtResource("26_t4l4u")
+metadata/AnimatedDone = true
+metadata/JumlahBenar = 0
+
+[node name="HoverAudio" type="AudioStreamPlayer2D" parent="TunjukanHasil/Results" unique_id=1099240277]
+position = Vector2(81, -700)
+stream = ExtResource("4_dtnkx")
+bus = &"SFX"
+
+[node name="Day" type="Label" parent="TunjukanHasil/Results" unique_id=1136348059]
+layout_mode = 0
+offset_left = 305.0
+offset_top = 135.0
+offset_right = 477.0
+offset_bottom = 220.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_sqb0o")
+theme_override_font_sizes/font_size = 70
+text = "HARI -"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 171
+
+[node name="Vbox" type="VBoxContainer" parent="TunjukanHasil/Results" unique_id=2133553427]
+layout_mode = 0
+offset_left = 201.0
+offset_top = 220.00002
+offset_right = 778.0
+offset_bottom = 480.0
+scale = Vector2(0.6785498, 1.0277394)
+alignment = 1
+script = ExtResource("50_cf1g3")
+
+[node name="StampelBenar" type="Label" parent="TunjukanHasil/Results/Vbox" unique_id=1619795057]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_sqb0o")
+theme_override_font_sizes/font_size = 32
+text = "Stampel yang benar........................0"
+justification_flags = 171
+
+[node name="KoranDiStampel" type="Label" parent="TunjukanHasil/Results/Vbox" unique_id=1039590746]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_sqb0o")
+theme_override_font_sizes/font_size = 32
+text = "Koran yang di stampel....................0"
+justification_flags = 171
+
+[node name="TidakBakuKetemu" type="Label" parent="TunjukanHasil/Results/Vbox" unique_id=1801274838]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_sqb0o")
+theme_override_font_sizes/font_size = 32
+text = "Tidak Baku yang ketemu..................0"
+justification_flags = 171
+
+[node name="UnBakuKeBakuBenar" type="Label" parent="TunjukanHasil/Results/Vbox" unique_id=1004045189]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_sqb0o")
+theme_override_font_sizes/font_size = 32
+text = "Tidak Baku ke Baku yang benar.......0"
+justification_flags = 171
+
+[node name="BakuTerpilih" type="Label" parent="TunjukanHasil/Results/Vbox" unique_id=516806776]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_sqb0o")
+theme_override_font_sizes/font_size = 32
+text = "Baku yang terpilih..........................0"
+justification_flags = 171
+
+[node name="Waktu" type="Label" parent="TunjukanHasil/Results/Vbox" unique_id=1804304183]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_sqb0o")
+theme_override_font_sizes/font_size = 32
+text = "-Waktu- 00:00"
+justification_flags = 171
+
+[node name="CekHasil" type="TextureButton" parent="TunjukanHasil/Results" unique_id=1557839997]
+layout_mode = 0
+offset_left = 729.0
+offset_top = 471.00003
+offset_right = 2901.0
+offset_bottom = 1195.0
+scale = Vector2(0.17182626, 0.15804355)
+texture_normal = ExtResource("51_u1gua")
+texture_hover = ExtResource("52_2cu3p")
+
+[node name="NextDay" type="TextureButton" parent="TunjukanHasil/Results" unique_id=1853014750]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 569.0
+offset_right = 2924.0
+offset_bottom = 1293.0
+scale = Vector2(0.15202174, 0.1548377)
+texture_normal = ExtResource("53_sqqtj")
+texture_hover = ExtResource("54_pu8ve")
+
+[node name="AnimatedSprite2D1" type="AnimatedSprite2D" parent="TunjukanHasil/Results" unique_id=1766626250]
+texture_filter = 1
+position = Vector2(302.10297, 533)
+scale = Vector2(3.4439352, 3.1874995)
+sprite_frames = SubResource("SpriteFrames_xrivr")
+animation = &"Star"
+autoplay = "Star"
+frame = 3
+frame_progress = 0.283172
+metadata/K = 1
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="TunjukanHasil/Results" unique_id=2022394180]
+texture_filter = 1
+position = Vector2(392.10297, 533)
+scale = Vector2(3.4439352, 3.1874995)
+sprite_frames = SubResource("SpriteFrames_xrivr")
+animation = &"Star"
+autoplay = "Star"
+metadata/K = 2
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="TunjukanHasil/Results" unique_id=48820936]
+texture_filter = 1
+position = Vector2(482.10297, 533)
+scale = Vector2(3.4439352, 3.1874995)
+sprite_frames = SubResource("SpriteFrames_xrivr")
+animation = &"Star"
+autoplay = "Star"
+metadata/K = 3
+
+[node name="Preview" type="Node2D" parent="TunjukanHasil/Results" unique_id=38665524]
+position = Vector2(910.00006, 240.00002)
+scale = Vector2(1.1666666, 1.2016807)
+
+[node name="KertasJawab" type="Sprite2D" parent="TunjukanHasil/Results/Preview" unique_id=1507412059]
+texture_filter = 1
+position = Vector2(39.498608, -2.4340725)
+rotation = 0.0880049
+scale = Vector2(3.9531252, 5.109375)
+texture = SubResource("GradientTexture2D_vme86")
+
+[node name="Koran" type="Sprite2D" parent="TunjukanHasil/Results/Preview" unique_id=801726590]
+texture_filter = 1
+position = Vector2(-11.92995, 19.202295)
+rotation = -0.021934899
+scale = Vector2(3.3375, 3.5572915)
+texture = ExtResource("24_x6l2d")
+
+[node name="Waktu" type="Label" parent="." unique_id=1680076640]
+offset_left = 1009.0
+offset_top = 682.0
+offset_right = 1078.0
+offset_bottom = 718.0
+theme_override_fonts/font = ExtResource("57_sqqtj")
+theme_override_font_sizes/font_size = 40
+text = "00:00"
+script = ExtResource("58_pu8ve")
+
+[connection signal="input_event" from="Kantor/KerangkaTelepon/Area2D" to="Kantor/KerangkaTelepon" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="Kantor/KoranIkat/Area2D" to="Kantor/KoranIkat/Area2D" method="KoranIkat_on_input_event"]
+[connection signal="input_event" from="Kantor/Coffee/Area2D" to="Kantor/Coffee" method="_on_area_2d_input_event"]
+[connection signal="area_entered" from="Kantor/StampleBlue/Area2D" to="Kantor/StampleBlue" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Kantor/StampleBlue/Area2D" to="Kantor/StampleBlue" method="_on_area_2d_area_exited"]
+[connection signal="input_event" from="Kantor/StampleBlue/Area2D" to="Kantor/StampleBlue" method="HoldClick_on_area_2d_input_event"]
+[connection signal="area_entered" from="Kantor/StampleRed/Area2D" to="Kantor/StampleRed" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Kantor/StampleRed/Area2D" to="Kantor/StampleRed" method="_on_area_2d_area_exited"]
+[connection signal="input_event" from="Kantor/StampleRed/Area2D" to="Kantor/StampleRed" method="HoldClick_on_area_2d_input_event"]
+[connection signal="input_event" from="Kantor/KoranAtasMeja/Area2D" to="Kantor/KoranAtasMeja" method="HoldClick_on_area_2d_input_event"]
+[connection signal="area_entered" from="Kantor/KoranAtasMeja/Area2DMasukinKoran" to="Kantor/KoranAtasMeja" method="_on_area_2d_masukin_koran_area_entered"]
+[connection signal="area_exited" from="Kantor/KoranAtasMeja/Area2DMasukinKoran" to="Kantor/KoranAtasMeja" method="_on_area_2d_masukin_koran_area_exited"]
+[connection signal="pressed" from="TunjukanHasil/CekHasil/KiriTombol" to="TunjukanHasil/CekHasil" method="_on_texture_button_pressed_left"]
+[connection signal="pressed" from="TunjukanHasil/CekHasil/KananTombol" to="TunjukanHasil/CekHasil" method="_on_texture_button_pressed_right"]
+[connection signal="pressed" from="TunjukanHasil/CekHasil/KembaliTombol" to="TunjukanHasil" method="_on_texture_button_pressed_cekHasil"]
+[connection signal="pressed" from="TunjukanHasil/Results/CekHasil" to="TunjukanHasil" method="_on_texture_button_pressed_results"]
+[connection signal="pressed" from="TunjukanHasil/Results/CekHasil" to="TunjukanHasil/CekHasil" method="_on_cek_hasil_press_open"]
+[connection signal="button_down" from="TunjukanHasil/Results/NextDay" to="TunjukanHasil/Results" method="_on_next_day_button_down"]

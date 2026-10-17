@@ -1,0 +1,265 @@
+[gd_scene format=3 uid="uid://bcdu6x6c22pea"]
+
+[ext_resource type="FontFile" uid="uid://jheeqt6a21p3" path="res://Asset/Silver.ttf" id="1_ftydy"]
+[ext_resource type="Script" uid="uid://loaancyhpj2r" path="res://Scripts/main_menu.gd" id="1_kqsxi"]
+[ext_resource type="Texture2D" uid="uid://xmn1dey3fnpo" path="res://Asset/Kantor.png" id="2_ejkra"]
+[ext_resource type="Shader" uid="uid://c88q64y0kkpaf" path="res://Shader/game.gdshader" id="3_fqtvk"]
+[ext_resource type="FontFile" uid="uid://ytwed5032sdh" path="res://Asset/FORT AVENUE.otf" id="3_hii65"]
+[ext_resource type="Script" uid="uid://dtcfmpijfd57s" path="res://Scripts/v_box_container.gd" id="4_oqads"]
+[ext_resource type="Texture2D" uid="uid://biiarl2ojgr2m" path="res://Asset/kerangka telepon.png" id="4_p1wrw"]
+[ext_resource type="Texture2D" uid="uid://wsdaqtalcf80" path="res://Asset/coffee_mug.png" id="4_shpw1"]
+[ext_resource type="Texture2D" uid="uid://dwgop43v42ktw" path="res://Asset/sticky_note.png" id="5_34sut"]
+[ext_resource type="Texture2D" uid="uid://dtbydegindiil" path="res://Asset/newspaper box.png" id="5_hjh75"]
+[ext_resource type="Texture2D" uid="uid://cx6ma2nr0x3r0" path="res://Asset/KoranMainMenu.png" id="5_pvidh"]
+[ext_resource type="Texture2D" uid="uid://dblymfcp37oqa" path="res://Asset/wall_clock.png" id="6_fqtvk"]
+[ext_resource type="Script" uid="uid://bvftcjuspnu45" path="res://Scripts/label.gd" id="7_ejkra"]
+[ext_resource type="Texture2D" uid="uid://cte28i0gpnuu4" path="res://Asset/stample_blue.png" id="7_p1wrw"]
+[ext_resource type="Texture2D" uid="uid://cng3oig4epbtv" path="res://Asset/stample_X.png" id="8_hjh75"]
+[ext_resource type="Script" uid="uid://dj2mqdkggihue" path="res://Scripts/panel_2.gd" id="9_yok32"]
+[ext_resource type="PackedScene" uid="uid://cpnpqdhq8hcsf" path="res://Scene/pengaturan.tscn" id="17_fqtvk"]
+[ext_resource type="AudioStream" uid="uid://bxpcj8t16w0tg" path="res://Asset/Audio/MainMenuSong.mp3" id="18_p1wrw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ujbs8"]
+shader = ExtResource("3_fqtvk")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.5999999865888
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ewjfp"]
+shader = ExtResource("3_fqtvk")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.5999999865888
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sg2m2"]
+shader = ExtResource("3_fqtvk")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.5999999865888
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_50pke"]
+shader = ExtResource("3_fqtvk")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.5999999865888
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qkujl"]
+shader = ExtResource("3_fqtvk")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 4
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 1.0
+shader_parameter/darkness = 0.5999999865888
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohty0"]
+content_margin_top = 1.0
+content_margin_right = 20.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+expand_margin_right = 20.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hii65"]
+content_margin_left = 20.0
+content_margin_top = 1.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hii65"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ohty0"]
+texture = ExtResource("5_pvidh")
+
+[node name="MainMenu" type="Control" unique_id=135707662]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 540.0
+offset_top = 360.0
+offset_right = -540.0
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kqsxi")
+
+[node name="Kantor2" type="Sprite2D" parent="." unique_id=449421051]
+modulate = Color(0.57700837, 0.5770084, 0.57700837, 1)
+self_modulate = Color(0.8949222, 0.89492244, 0.8949223, 1)
+z_index = -6
+texture_filter = 1
+position = Vector2(-3.2687988, 1.4269714)
+scale = Vector2(1.6999102, 1.7614865)
+texture = ExtResource("2_ejkra")
+
+[node name="KerangkaTelepon" type="Sprite2D" parent="Kantor2" unique_id=1080113418]
+material = SubResource("ShaderMaterial_ujbs8")
+position = Vector2(-233.99055, 28.791021)
+scale = Vector2(1.9875329, 2.1865485)
+texture = ExtResource("4_p1wrw")
+metadata/Outline = 1.0
+
+[node name="NewspaperBox" type="Sprite2D" parent="Kantor2" unique_id=1084900177]
+texture_filter = 1
+material = SubResource("ShaderMaterial_ewjfp")
+position = Vector2(225.38792, 31.087597)
+scale = Vector2(2.612141, 2.5937407)
+texture = ExtResource("5_hjh75")
+metadata/Outline = 1.0
+
+[node name="Coffee" type="Sprite2D" parent="Kantor2" unique_id=635040762]
+modulate = Color(0.98234254, 0.9823423, 0.9823424, 1)
+self_modulate = Color(0.8175213, 0.8175213, 0.81752115, 1)
+texture_filter = 1
+material = SubResource("ShaderMaterial_sg2m2")
+position = Vector2(-227.68198, 120.65407)
+scale = Vector2(1.7048193, 1.5422705)
+texture = ExtResource("4_shpw1")
+flip_h = true
+metadata/Outline = 1.5
+
+[node name="StickyNote" type="Sprite2D" parent="Kantor2" unique_id=373834436]
+modulate = Color(0.7121294, 0.7121294, 0.71212935, 1)
+texture_filter = 1
+position = Vector2(-222.89157, -119.48956)
+scale = Vector2(3.0104795, 2.9047635)
+texture = ExtResource("5_34sut")
+
+[node name="WallClock" type="Sprite2D" parent="Kantor2" unique_id=1389911405]
+modulate = Color(0.7750634, 0.7750634, 0.7750634, 1)
+texture_filter = 1
+position = Vector2(212.65062, -159.51276)
+scale = Vector2(1.8731176, 1.7582657)
+texture = ExtResource("6_fqtvk")
+
+[node name="StampleBlue" type="Sprite2D" parent="Kantor2" unique_id=705110164]
+modulate = Color(0.83033526, 0.83033514, 0.83033514, 1)
+texture_filter = 1
+material = SubResource("ShaderMaterial_50pke")
+position = Vector2(228.98854, 107.88381)
+scale = Vector2(1.152, 1.126)
+texture = ExtResource("7_p1wrw")
+metadata/Outline = 1.5
+
+[node name="StampleX" type="Sprite2D" parent="Kantor2" unique_id=800158177]
+modulate = Color(0.83033526, 0.83033514, 0.83033514, 1)
+texture_filter = 1
+material = SubResource("ShaderMaterial_qkujl")
+position = Vector2(259.38437, 127.978874)
+scale = Vector2(1.152, 1.126)
+texture = ExtResource("8_hjh75")
+metadata/Outline = 1.5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1338884225]
+layout_mode = 0
+offset_left = -458.0
+offset_top = -36.0
+offset_right = -135.0
+offset_bottom = 296.0
+script = ExtResource("4_oqads")
+
+[node name="Mulai" type="Button" parent="VBoxContainer" unique_id=113623159]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/font_pressed_color = Color(0.28485027, 0.28485027, 0.28485027, 1)
+theme_override_fonts/font = ExtResource("1_ftydy")
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxFlat_ohty0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ohty0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hii65")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hii65")
+text = "Mulai"
+
+[node name="Pengaturan" type="Button" parent="VBoxContainer" unique_id=1562221743]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/font_pressed_color = Color(0.28485027, 0.28485027, 0.28485027, 1)
+theme_override_fonts/font = ExtResource("1_ftydy")
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxFlat_ohty0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ohty0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hii65")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hii65")
+text = "Pengaturan"
+
+[node name="Keluar" type="Button" parent="VBoxContainer" unique_id=1036383622]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/font_pressed_color = Color(0.28485027, 0.28485027, 0.28485027, 1)
+theme_override_fonts/font = ExtResource("1_ftydy")
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxFlat_ohty0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ohty0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hii65")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hii65")
+text = "Keluar"
+
+[node name="Label" type="Label" parent="." unique_id=1961291136]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+layout_mode = 0
+offset_left = -489.0
+offset_top = -303.0
+offset_right = 25.0
+offset_bottom = -66.0
+theme_override_constants/line_spacing = -23
+theme_override_constants/paragraph_spacing = 8
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("3_hii65")
+theme_override_font_sizes/font_size = 130
+text = "SALAH 
+CETAK!!!"
+vertical_alignment = 1
+script = ExtResource("7_ejkra")
+
+[node name="Panel2" type="Panel" parent="." unique_id=40554931]
+modulate = Color(0.7204674, 0.7204675, 0.7204674, 1)
+layout_mode = 0
+offset_left = 95.000015
+offset_top = -394.0
+offset_right = 725.0
+offset_bottom = 381.0
+rotation = 0.3470457
+theme_override_styles/panel = SubResource("StyleBoxTexture_ohty0")
+script = ExtResource("9_yok32")
+
+[node name="Pengaturan" parent="." unique_id=177594726 instance=ExtResource("17_fqtvk")]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 284.0
+offset_right = 284.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="BGMenu" type="AudioStreamPlayer2D" parent="." unique_id=264433440]
+stream = ExtResource("18_p1wrw")
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="VBoxContainer/Mulai" to="." method="tombol_mulai_pressed"]
+[connection signal="pressed" from="VBoxContainer/Pengaturan" to="." method="tombol_pengaturan_pressed"]
+[connection signal="pressed" from="VBoxContainer/Keluar" to="." method="tombol_keluar_pressed"]

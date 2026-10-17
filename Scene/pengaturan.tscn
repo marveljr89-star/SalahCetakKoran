@@ -1,0 +1,304 @@
+[gd_scene format=3 uid="uid://cpnpqdhq8hcsf"]
+
+[ext_resource type="Script" uid="uid://b3rrligp4wbtd" path="res://Scripts/pengaturan.gd" id="1_2gkug"]
+[ext_resource type="Script" uid="uid://cxsejey5st2w0" path="res://Scripts/master_audio.gd" id="2_2pe7y"]
+[ext_resource type="AudioStream" uid="uid://dvjuo28a8fi6i" path="res://Asset/Audio/whoosh.mp3" id="2_po6qv"]
+[ext_resource type="Script" uid="uid://cd4ylfpy0b5yf" path="res://Scripts/music_audio.gd" id="3_kyvqk"]
+[ext_resource type="Script" uid="uid://b6bdjijjugcmv" path="res://Scripts/sfx_audio.gd" id="4_he1c3"]
+[ext_resource type="Script" uid="uid://dlqwviaoj5i17" path="res://Scripts/full_screen_control.gd" id="5_y1gus"]
+[ext_resource type="Script" uid="uid://b2sxq5d0o3d6k" path="res://Scripts/matikan_notifikasi.gd" id="6_136nq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2gkug"]
+bg_color = Color(0.0768358, 0.07683582, 0.076835774, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.7411765, 0.5686275, 0.43137255, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 20
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_mqp4n"]
+color = Color(1, 1, 1, 1)
+thickness = 3
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ohty0"]
+color = Color(0.74069947, 0.5705795, 0.43136153, 1)
+thickness = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mqp4n"]
+bg_color = Color(0.37, 0.37, 0.37, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7411765, 0.5686275, 0.43137255, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okv1k"]
+bg_color = Color(0.038397167, 0.038397167, 0.03839716, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.62967473, 0.62967473, 0.6296747, 1)
+border_blend = true
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2pe7y"]
+bg_color = Color(0.2231029, 0.2231029, 0.22310284, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.62967473, 0.62967473, 0.6296747, 1)
+border_blend = true
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+corner_detail = 20
+
+[node name="Pengaturan" type="Control" unique_id=177594726]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2gkug")
+metadata/AlreadyOpen = false
+metadata/AlreadyClosed = true
+
+[node name="SlideIn" type="AudioStreamPlayer2D" parent="." unique_id=959548884]
+stream = ExtResource("2_po6qv")
+bus = &"SFX"
+
+[node name="Panel" type="Panel" parent="." unique_id=145503919]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.5
+offset_top = -302.0
+offset_right = 219.5
+offset_bottom = 302.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_2gkug")
+
+[node name="pengaturar" type="Label" parent="Panel" unique_id=736167052]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 65.5
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 32
+text = "Pengaturan"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Master" type="Label" parent="Panel" unique_id=1626387446]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 24.5
+offset_top = 71.00001
+offset_right = -297.5
+offset_bottom = 97.00001
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 18
+text = "Master Suara"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Music" type="Label" parent="Panel" unique_id=173420794]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 19.5
+offset_top = 135.0
+offset_right = -302.49954
+offset_bottom = 161.00009
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 18
+text = "Music Suara"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFX" type="Label" parent="Panel" unique_id=1688078052]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 19.5
+offset_top = 197.0
+offset_right = -321.295
+offset_bottom = 223.00009
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 18
+text = "SFX Suara"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MasterAudio" type="HSlider" parent="Panel" unique_id=2093600502]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -201.0
+offset_top = 79.52
+offset_right = 172.0
+offset_bottom = 141.52036
+grow_horizontal = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_mqp4n")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_ohty0")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_ohty0")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("2_2pe7y")
+audio_bus_name = "Master"
+
+[node name="Angka" type="Label" parent="Panel/MasterAudio" unique_id=1943932452]
+texture_filter = 1
+layout_mode = 0
+offset_left = 380.0
+offset_top = 19.480011
+offset_right = 407.0
+offset_bottom = 42.48001
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MusicAudio" type="HSlider" parent="Panel" unique_id=822905729]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -201.60498
+offset_top = 143.0
+offset_right = 172.0
+offset_bottom = 205.0
+grow_horizontal = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_mqp4n")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_ohty0")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_ohty0")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("3_kyvqk")
+audio_bus_name = "Music"
+
+[node name="Angka" type="Label" parent="Panel/MusicAudio" unique_id=236123146]
+texture_filter = 1
+layout_mode = 0
+offset_left = 380.60498
+offset_top = 19.0
+offset_right = 407.60498
+offset_bottom = 42.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXAudio" type="HSlider" parent="Panel" unique_id=269674651]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -201.605
+offset_top = 205.0
+offset_right = 172.0
+offset_bottom = 267.0
+grow_horizontal = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_mqp4n")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_ohty0")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_ohty0")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("4_he1c3")
+audio_bus_name = "SFX"
+
+[node name="Angka" type="Label" parent="Panel/SFXAudio" unique_id=743506755]
+texture_filter = 1
+layout_mode = 0
+offset_left = 380.60498
+offset_top = 19.0
+offset_right = 407.60498
+offset_bottom = 42.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FullScreenControl" type="CheckButton" parent="Panel" unique_id=1089439416]
+texture_filter = 1
+layout_mode = 0
+offset_left = 14.5
+offset_top = 273.0
+offset_right = 423.5
+offset_bottom = 310.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_mqp4n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mqp4n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mqp4n")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_mqp4n")
+action_mode = 0
+text = " Mode Layar Penuh"
+script = ExtResource("5_y1gus")
+
+[node name="MatikanNotifikasi" type="CheckButton" parent="Panel" unique_id=749037162]
+texture_filter = 1
+layout_mode = 0
+offset_left = 14.5
+offset_top = 333.0
+offset_right = 423.5
+offset_bottom = 370.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_mqp4n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mqp4n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mqp4n")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_mqp4n")
+action_mode = 0
+text = " Matikan pemberitahuan"
+script = ExtResource("6_136nq")
+
+[node name="Button" type="Button" parent="Panel" unique_id=430559028]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -143.5
+offset_top = -80.525024
+offset_right = 143.5
+offset_bottom = -31.525024
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_okv1k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2pe7y")
+text = "Kembali"
+
+[connection signal="value_changed" from="Panel/MasterAudio" to="Panel/MasterAudio" method="_on_value_changed"]
+[connection signal="value_changed" from="Panel/MusicAudio" to="Panel/MusicAudio" method="_on_value_changed"]
+[connection signal="value_changed" from="Panel/SFXAudio" to="Panel/SFXAudio" method="_on_value_changed"]
+[connection signal="toggled" from="Panel/FullScreenControl" to="Panel/FullScreenControl" method="_on_toggled"]
+[connection signal="toggled" from="Panel/MatikanNotifikasi" to="Panel/MatikanNotifikasi" method="_on_toggled"]
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]

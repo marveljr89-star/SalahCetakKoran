@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c15tgkux3t4xp"]
+
+[ext_resource type="Script" uid="uid://cki6aoy5j2cmd" path="res://Scripts/notification_pop_up.gd" id="1_naxfn"]
+[ext_resource type="Texture2D" uid="uid://vod1djd3suuy" path="res://Asset/Panel Notifikasi Pixel Parchment.png" id="1_xiibw"]
+[ext_resource type="FontFile" uid="uid://c6a8k61n7dhbf" path="res://Asset/Digital808.ttf" id="2_oqyc7"]
+[ext_resource type="AudioStream" uid="uid://q7ld5p74stbo" path="res://Asset/Audio/notif.mp3" id="4_cd1kx"]
+
+[node name="Notif" type="Control" unique_id=1269245155]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_naxfn")
+
+[node name="NotifikasiBar" type="Sprite2D" parent="." unique_id=1624327239]
+position = Vector2(561.50006, 613.25)
+scale = Vector2(0.41390428, 0.34323213)
+texture = ExtResource("1_xiibw")
+
+[node name="Text" type="Label" parent="NotifikasiBar" unique_id=1039920220]
+offset_left = -902.3827
+offset_top = -70.651855
+offset_right = 904.79834
+offset_bottom = 66.28174
+theme_override_colors/font_color = Color(0.47, 0.21008998, 0.09869999, 0.7921569)
+theme_override_fonts/font = ExtResource("2_oqyc7")
+theme_override_font_sizes/font_size = 155
+text = "Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 171
+
+[node name="NotifAudio" type="AudioStreamPlayer2D" parent="." unique_id=1808202491]
+stream = ExtResource("4_cd1kx")
+bus = &"SFX"

@@ -1,0 +1,815 @@
+[gd_scene format=3 uid="uid://bm5jrhtg2ib6m"]
+
+[ext_resource type="Script" uid="uid://b2xl122qc8an5" path="res://Scripts/koran.gd" id="1_2xcka"]
+[ext_resource type="Script" uid="uid://t07lofhshvsc" path="res://Scripts/text_koran.gd" id="1_a5xan"]
+[ext_resource type="Texture2D" uid="uid://b4mkfielkoc74" path="res://Asset/UI_Koran_Kosong.png" id="1_b6iex"]
+[ext_resource type="FontFile" uid="uid://bbm6jcdggx4eq" path="res://Asset/times.ttf" id="2_k7jqq"]
+[ext_resource type="Texture2D" uid="uid://ogdbl2yyahgd" path="res://Asset/KeKertasSelanjutnya.png" id="2_k71aw"]
+[ext_resource type="Script" uid="uid://04h47deqnl7v" path="res://Scripts/TextSlotAll.gd" id="2_ntaev"]
+[ext_resource type="Shader" uid="uid://c88q64y0kkpaf" path="res://Shader/game.gdshader" id="5_8ivg0"]
+[ext_resource type="Script" uid="uid://cj53epgple36o" path="res://Scripts/kertasJawab.gd" id="5_gsnj3"]
+[ext_resource type="Texture2D" uid="uid://b5cvxjyfonfbk" path="res://Asset/x_icon.png" id="5_k71aw"]
+[ext_resource type="Texture2D" uid="uid://c36a2pygbg0fv" path="res://Asset/x_icon_hover.png" id="6_0e7og"]
+[ext_resource type="Texture2D" uid="uid://dvjb2k1kr3mo4" path="res://Asset/arrow.png" id="8_0e7og"]
+[ext_resource type="Script" uid="uid://sqpvfpanxrfs" path="res://Scripts/Stampel_KoranUI.gd" id="10_htl6i"]
+[ext_resource type="Script" uid="uid://du30pn1u4x4vd" path="res://Scripts/SwitchKertas.gd" id="12_8ivg0"]
+[ext_resource type="Texture2D" uid="uid://ccqcaqpcl6ch" path="res://Asset/stamp_salah (red) (1).png" id="14_8y6y7"]
+[ext_resource type="Texture2D" uid="uid://cv4g12s57mqni" path="res://Asset/stamp_bener (blue) (1).png" id="15_mp7gk"]
+[ext_resource type="AudioStream" uid="uid://dkny7kieni6rk" path="res://Asset/Audio/koran_slide.mp3" id="16_8y6y7"]
+[ext_resource type="AudioStream" uid="uid://cqvk803ity1r6" path="res://Asset/Audio/ArsirText.ogg" id="17_mp7gk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ohty0"]
+size = Vector2(180.35345, 811.81714)
+
+[sub_resource type="Gradient" id="Gradient_vtu7m"]
+offsets = PackedFloat32Array(0, 0.63081396)
+colors = PackedColorArray(0.96862745, 0.9254902, 0.85882354, 1, 0.7143905, 0.5782574, 0.34986493, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0e7og"]
+gradient = SubResource("Gradient_vtu7m")
+fill_from = Vector2(0.9722222, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_htl6i"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8y6y7"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mp7gk"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vtu7m"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2lhc4"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_alyrh"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="Gradient" id="Gradient_uwgqe"]
+offsets = PackedFloat32Array(0, 0.63081396)
+colors = PackedColorArray(0.96862745, 0.9254902, 0.85882354, 1, 0.7143905, 0.5782574, 0.34986493, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ui50b"]
+gradient = SubResource("Gradient_uwgqe")
+fill_from = Vector2(0.9722222, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gsnj3"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5weno"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k71aw"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0e7og"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ivg0"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 1.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4cuhv"]
+shader = ExtResource("5_8ivg0")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/thickness = 0.0
+shader_parameter/sample_count = 8
+shader_parameter/inner_outline = false
+shader_parameter/opacity = 0.0
+shader_parameter/darkness = 0.0
+
+[node name="UI" type="Node2D" unique_id=772094135]
+script = ExtResource("1_2xcka")
+metadata/AnimatedDone = true
+
+[node name="AudioKoran" type="AudioStreamPlayer2D" parent="." unique_id=237742749]
+position = Vector2(117, -169)
+stream = ExtResource("16_8y6y7")
+bus = &"SFX"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=748421051]
+position = Vector2(71.999985, 179)
+rotation = 1.5707964
+scale = Vector2(0.11643804, 0.12810767)
+texture = ExtResource("2_k71aw")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1460781659]
+script = ExtResource("12_8ivg0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=998142996]
+position = Vector2(4.2940674, -0.00012207031)
+shape = SubResource("RectangleShape2D_ohty0")
+
+[node name="Sheet" type="Node2D" parent="." unique_id=15963109]
+position = Vector2(10, -10)
+
+[node name="KertasJawab" type="Sprite2D" parent="Sheet" unique_id=2041115798]
+texture_filter = 1
+scale = Vector2(3.9531252, 5.109375)
+texture = SubResource("GradientTexture2D_0e7og")
+
+[node name="GridContainer" type="GridContainer" parent="Sheet" unique_id=372389946]
+z_as_relative = false
+texture_filter = 1
+offset_left = -124.856995
+offset_top = -90.0
+offset_right = 125.143005
+offset_bottom = 160.0
+script = ExtResource("2_ntaev")
+
+[node name="TextSlot1" type="Panel" parent="Sheet/GridContainer" unique_id=1212419903]
+texture_filter = 1
+material = SubResource("ShaderMaterial_htl6i")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 0
+
+[node name="Label" type="Label" parent="Sheet/GridContainer/TextSlot1" unique_id=260762181]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Sheet/GridContainer/TextSlot1" unique_id=958214166]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="Sheet/GridContainer/TextSlot1" unique_id=788904887]
+visible = false
+position = Vector2(110.69032, 14.166661)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("8_0e7og")
+
+[node name="TextureButton" type="TextureButton" parent="Sheet/GridContainer/TextSlot1" unique_id=851207418]
+visible = false
+layout_mode = 0
+offset_left = -0.14300536
+offset_top = -0.99999994
+offset_right = 15.856995
+offset_bottom = 15.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("5_k71aw")
+texture_hover = ExtResource("6_0e7og")
+
+[node name="TextSlot2" type="Panel" parent="Sheet/GridContainer" unique_id=1309891103]
+texture_filter = 1
+material = SubResource("ShaderMaterial_8y6y7")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 1
+
+[node name="Label" type="Label" parent="Sheet/GridContainer/TextSlot2" unique_id=2089129008]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Sheet/GridContainer/TextSlot2" unique_id=1453863768]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="Sheet/GridContainer/TextSlot2" unique_id=1604727225]
+visible = false
+position = Vector2(110.69031, 15.166672)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("8_0e7og")
+
+[node name="TextureButton" type="TextureButton" parent="Sheet/GridContainer/TextSlot2" unique_id=430039018]
+visible = false
+layout_mode = 0
+offset_left = -0.14300536
+offset_top = -0.99999994
+offset_right = 15.856995
+offset_bottom = 15.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("5_k71aw")
+texture_hover = ExtResource("6_0e7og")
+
+[node name="TextSlot3" type="Panel" parent="Sheet/GridContainer" unique_id=994505573]
+texture_filter = 1
+material = SubResource("ShaderMaterial_mp7gk")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 2
+
+[node name="Label" type="Label" parent="Sheet/GridContainer/TextSlot3" unique_id=997849998]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Sheet/GridContainer/TextSlot3" unique_id=2061500859]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="Sheet/GridContainer/TextSlot3" unique_id=1628520227]
+visible = false
+position = Vector2(110.37377, 14.556128)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("8_0e7og")
+
+[node name="TextureButton" type="TextureButton" parent="Sheet/GridContainer/TextSlot3" unique_id=1920567569]
+visible = false
+layout_mode = 0
+offset_left = -0.14300536
+offset_top = -0.99999994
+offset_right = 15.856995
+offset_bottom = 15.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("5_k71aw")
+texture_hover = ExtResource("6_0e7og")
+
+[node name="TextSlot4" type="Panel" parent="Sheet/GridContainer" unique_id=1656890752]
+texture_filter = 1
+material = SubResource("ShaderMaterial_vtu7m")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 3
+
+[node name="Label" type="Label" parent="Sheet/GridContainer/TextSlot4" unique_id=788208669]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Sheet/GridContainer/TextSlot4" unique_id=2046388343]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="Sheet/GridContainer/TextSlot4" unique_id=2117659996]
+visible = false
+position = Vector2(110.37377, 15.556142)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("8_0e7og")
+
+[node name="TextureButton" type="TextureButton" parent="Sheet/GridContainer/TextSlot4" unique_id=1981594739]
+visible = false
+layout_mode = 0
+offset_left = -0.14300536
+offset_top = -0.99999994
+offset_right = 15.856995
+offset_bottom = 15.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("5_k71aw")
+texture_hover = ExtResource("6_0e7og")
+
+[node name="TextSlot5" type="Panel" parent="Sheet/GridContainer" unique_id=1492989551]
+texture_filter = 1
+material = SubResource("ShaderMaterial_2lhc4")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 4
+
+[node name="Label" type="Label" parent="Sheet/GridContainer/TextSlot5" unique_id=1940375764]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Sheet/GridContainer/TextSlot5" unique_id=1819766353]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="Sheet/GridContainer/TextSlot5" unique_id=15231461]
+visible = false
+position = Vector2(110.69034, 14.833312)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("8_0e7og")
+
+[node name="TextureButton" type="TextureButton" parent="Sheet/GridContainer/TextSlot5" unique_id=1842606982]
+visible = false
+layout_mode = 0
+offset_left = -0.14300536
+offset_top = -0.99999994
+offset_right = 15.856995
+offset_bottom = 15.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("5_k71aw")
+texture_hover = ExtResource("6_0e7og")
+
+[node name="TextSlot6" type="Panel" parent="Sheet/GridContainer" unique_id=1477737898]
+texture_filter = 1
+material = SubResource("ShaderMaterial_alyrh")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 5
+
+[node name="Label" type="Label" parent="Sheet/GridContainer/TextSlot6" unique_id=451074033]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_left = 3.8569946
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Sheet/GridContainer/TextSlot6" unique_id=1697890387]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 240.857
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+alignment = 1
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="Arrow" type="Sprite2D" parent="Sheet/GridContainer/TextSlot6" unique_id=1904060641]
+visible = false
+position = Vector2(110.69034, 14.166674)
+scale = Vector2(1.9593827, 2.0903494)
+texture = ExtResource("8_0e7og")
+
+[node name="TextureButton" type="TextureButton" parent="Sheet/GridContainer/TextSlot6" unique_id=2005958812]
+visible = false
+layout_mode = 0
+offset_left = -0.14300536
+offset_top = -0.99999994
+offset_right = 15.856995
+offset_bottom = 15.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("5_k71aw")
+texture_hover = ExtResource("6_0e7og")
+
+[node name="SheetJawab" type="Node2D" parent="." unique_id=929137378]
+visible = false
+position = Vector2(10, -10)
+
+[node name="KertasJawab" type="Sprite2D" parent="SheetJawab" unique_id=291126600]
+texture_filter = 1
+scale = Vector2(3.9531252, 5.109375)
+texture = SubResource("GradientTexture2D_ui50b")
+
+[node name="GridContainer" type="GridContainer" parent="SheetJawab" unique_id=1610713418]
+z_as_relative = false
+texture_filter = 1
+offset_left = -124.856995
+offset_top = -90.0
+offset_right = 125.143005
+offset_bottom = 160.0
+script = ExtResource("5_gsnj3")
+
+[node name="TextSlot1" type="Panel" parent="SheetJawab/GridContainer" unique_id=579976249]
+texture_filter = 1
+material = SubResource("ShaderMaterial_gsnj3")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 0
+
+[node name="Label" type="Label" parent="SheetJawab/GridContainer/TextSlot1" unique_id=85949109]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="SheetJawab/GridContainer/TextSlot1" unique_id=929685228]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 245.5
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 0.5019608)
+theme_override_font_sizes/font_size = 12
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="TextSlot2" type="Panel" parent="SheetJawab/GridContainer" unique_id=1468414592]
+texture_filter = 1
+material = SubResource("ShaderMaterial_5weno")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 1
+
+[node name="Label" type="Label" parent="SheetJawab/GridContainer/TextSlot2" unique_id=1053943732]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="SheetJawab/GridContainer/TextSlot2" unique_id=265666913]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 245.5
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="TextSlot3" type="Panel" parent="SheetJawab/GridContainer" unique_id=1983478224]
+texture_filter = 1
+material = SubResource("ShaderMaterial_k71aw")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 2
+
+[node name="Label" type="Label" parent="SheetJawab/GridContainer/TextSlot3" unique_id=590974780]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="SheetJawab/GridContainer/TextSlot3" unique_id=1867439803]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 245.5
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="TextSlot4" type="Panel" parent="SheetJawab/GridContainer" unique_id=120766019]
+texture_filter = 1
+material = SubResource("ShaderMaterial_0e7og")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 3
+
+[node name="Label" type="Label" parent="SheetJawab/GridContainer/TextSlot4" unique_id=1466425042]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="SheetJawab/GridContainer/TextSlot4" unique_id=895430410]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 245.5
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="TextSlot5" type="Panel" parent="SheetJawab/GridContainer" unique_id=156564868]
+texture_filter = 1
+material = SubResource("ShaderMaterial_8ivg0")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 4
+
+[node name="Label" type="Label" parent="SheetJawab/GridContainer/TextSlot5" unique_id=298189651]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="SheetJawab/GridContainer/TextSlot5" unique_id=321285614]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 245.5
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="TextSlot6" type="Panel" parent="SheetJawab/GridContainer" unique_id=562770189]
+texture_filter = 1
+material = SubResource("ShaderMaterial_4cuhv")
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+metadata/K = 5
+
+[node name="Label" type="Label" parent="SheetJawab/GridContainer/TextSlot6" unique_id=935954807]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.016
+anchor_top = 0.13333334
+anchor_right = 0.30800003
+anchor_bottom = 0.90033334
+offset_bottom = -0.010000229
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="SheetJawab/GridContainer/TextSlot6" unique_id=1958751633]
+visible = false
+layout_mode = 0
+offset_left = 149.0
+offset_top = -1.0
+offset_right = 245.5
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+editable = false
+context_menu_enabled = false
+emoji_menu_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+drag_and_drop_selection_enabled = false
+select_all_on_focus = true
+
+[node name="KoranUI" type="Node2D" parent="." unique_id=1782284881]
+script = ExtResource("10_htl6i")
+metadata/StampelBenar = false
+metadata/StampelSalah = false
+
+[node name="Koran" type="Sprite2D" parent="KoranUI" unique_id=1434123183]
+texture_filter = 1
+scale = Vector2(3.3375, 3.5572915)
+texture = ExtResource("1_b6iex")
+
+[node name="Paragraph" type="RichTextLabel" parent="KoranUI" unique_id=349448410]
+texture_filter = 1
+offset_left = -114.0
+offset_top = -57.0
+offset_right = 113.0
+offset_bottom = 121.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_k7jqq")
+theme_override_font_sizes/normal_font_size = 15
+fit_content = true
+justification_flags = 171
+meta_underlined = false
+script = ExtResource("1_a5xan")
+
+[node name="Judul" type="RichTextLabel" parent="KoranUI" unique_id=189080847]
+texture_filter = 1
+offset_left = -114.0
+offset_top = -81.0
+offset_right = 113.0
+offset_bottom = -59.999992
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_k7jqq")
+theme_override_font_sizes/normal_font_size = 13
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 171
+
+[node name="StampSalah" type="Sprite2D" parent="KoranUI" unique_id=176464471]
+visible = false
+texture_filter = 1
+position = Vector2(0, 28)
+rotation = -0.29768986
+scale = Vector2(4.867866, 5.1633725)
+texture = ExtResource("14_8y6y7")
+
+[node name="StampBenar" type="Sprite2D" parent="KoranUI" unique_id=742710732]
+visible = false
+texture_filter = 1
+position = Vector2(0, 28)
+rotation = -0.29768986
+scale = Vector2(4.867866, 5.1633725)
+texture = ExtResource("15_mp7gk")
+
+[node name="MengarsirText" type="AudioStreamPlayer2D" parent="KoranUI" unique_id=638474589]
+stream = ExtResource("17_mp7gk")
+bus = &"SFX"
+
+[node name="Tutup" type="TextureButton" parent="." unique_id=1370901054]
+z_index = 2
+texture_filter = 1
+offset_left = 117.0
+offset_top = -169.0
+offset_right = 134.00002
+offset_bottom = -152.00002
+texture_normal = ExtResource("5_k71aw")
+texture_hover = ExtResource("6_0e7og")
+
+[connection signal="input_event" from="Sprite2D/Area2D" to="Sprite2D/Area2D" method="_on_input_event_Clicked"]
+[connection signal="meta_clicked" from="KoranUI/Paragraph" to="Sheet/GridContainer" method="_on_paragraph_meta_clicked"]
+[connection signal="button_down" from="Tutup" to="." method="_on_texture_button_button_down_TutupKoran"]

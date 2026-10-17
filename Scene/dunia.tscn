@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://8dh7hmkqitj7"]
+
+[ext_resource type="Script" uid="uid://c8qfq8qjagc8h" path="res://Scripts/dunia.gd" id="1_m742w"]
+[ext_resource type="PackedScene" uid="uid://4npfoy6wq6d5" path="res://Scene/game.tscn" id="1_stkcj"]
+[ext_resource type="PackedScene" uid="uid://hi1ghf7txnk4" path="res://Scene/Confirmation_Koran.tscn" id="2_f7qpk"]
+[ext_resource type="PackedScene" uid="uid://bkol6is3oaiyw" path="res://Scene/esc_pause_button.tscn" id="3_whq14"]
+[ext_resource type="PackedScene" uid="uid://c15tgkux3t4xp" path="res://Scene/notification_popUp.tscn" id="5_74khi"]
+[ext_resource type="AudioStream" uid="uid://pq3d5l7eybe3" path="res://Asset/Audio/FirstBGM.mp3" id="6_05vk5"]
+[ext_resource type="PackedScene" uid="uid://cpnpqdhq8hcsf" path="res://Scene/pengaturan.tscn" id="6_gtwff"]
+[ext_resource type="AudioStream" uid="uid://c4xvqjg5a1lun" path="res://Asset/Audio/SecondBGM.mp3" id="7_gtwff"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ghklc"]
+streams_count = 2
+stream_0/stream = ExtResource("6_05vk5")
+stream_1/stream = ExtResource("7_gtwff")
+
+[node name="Dunia" type="Node" unique_id=1291749241]
+process_mode = 3
+script = ExtResource("1_m742w")
+
+[node name="Game" parent="." unique_id=819268376 instance=ExtResource("1_stkcj")]
+process_mode = 1
+
+[node name="SumbitKoran" parent="." unique_id=1031800965 instance=ExtResource("2_f7qpk")]
+visible = false
+metadata/Active = false
+
+[node name="PauseButton" parent="." unique_id=1099052575 instance=ExtResource("3_whq14")]
+process_priority = 0
+visible = false
+metadata/StillAnimate = false
+
+[node name="Notif" parent="." unique_id=1269245155 instance=ExtResource("5_74khi")]
+visible = false
+
+[node name="Pengaturan" parent="." unique_id=177594726 instance=ExtResource("6_gtwff")]
+process_mode = 3
+visible = false
+offset_left = 284.0
+offset_top = -700.0
+offset_right = 284.0
+offset_bottom = -700.0
+
+[node name="BGM" type="AudioStreamPlayer2D" parent="." unique_id=1826953565]
+stream = SubResource("AudioStreamRandomizer_ghklc")
+autoplay = true
+bus = &"Music"
